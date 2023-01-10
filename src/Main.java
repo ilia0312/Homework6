@@ -59,21 +59,36 @@ public class Main {
         for(int i = 1; i <= 512; i = i * 2){
             System.out.println("Итерация цикла " + i);
         }
-
     }
 
     public static void task8 () {
         System.out.println("Задача 8");
-
+        int salary = 29000;
+        int total = 0;
+        for (int i = 1; i <= 12; i = i + 1) {
+            total = total + salary;
+        System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+        }
     }
 
     public static void task9 () {
         System.out.println("Задача 9");
-
+        double salary = 29000;
+        double total = 0;
+        double percent = 0.01;
+        for (int i = 1; i <= 12; i = i + 1) {
+            total = (total + salary) * (1 + percent);
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+        }
     }
 
     public static void task10 () {
         System.out.println("Задача 10");
-
+        int table = 2;
+        int total = 0;
+        for(int i = 1; i <= 10; i = i + 1){
+            total = total + table;
+            System.out.println(table + "*" + i + "=" + total);
+        }
     }
 }
